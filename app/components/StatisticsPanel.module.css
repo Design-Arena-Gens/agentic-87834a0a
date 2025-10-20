@@ -1,0 +1,151 @@
+.panel {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(100, 100, 255, 0.3);
+  backdrop-filter: blur(10px);
+  width: 350px;
+  max-height: calc(100vh - 180px);
+  overflow-y: auto;
+  z-index: 100;
+}
+
+.panel h3 {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: #667eea;
+  text-align: center;
+}
+
+.panel h4 {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.statBox {
+  background: rgba(102, 126, 234, 0.1);
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(102, 126, 234, 0.2);
+}
+
+.statLabel {
+  font-size: 0.75rem;
+  color: #aaa;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.statValue {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.section {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.composition {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.compItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+}
+
+.compLabel {
+  width: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.compBar {
+  flex: 1;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.compFill {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.compValue {
+  width: 50px;
+  text-align: right;
+  color: #ccc;
+  font-size: 0.8rem;
+}
+
+.chartContainer {
+  height: 120px;
+  margin-top: 10px;
+}
+
+.energyDist {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.energyItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 5px;
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+.energyValue {
+  font-weight: bold;
+  color: #fff;
+}
+
+.panel::-webkit-scrollbar {
+  width: 6px;
+}
+
+.panel::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 3px;
+}
+
+.panel::-webkit-scrollbar-thumb {
+  background: rgba(102, 126, 234, 0.5);
+  border-radius: 3px;
+}
+
+.panel::-webkit-scrollbar-thumb:hover {
+  background: rgba(102, 126, 234, 0.7);
+}
